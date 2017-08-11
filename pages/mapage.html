@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="KENNOUCHE OMAR">
+
+    <title>SB Admin 2 - Ma Page</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- DataTables CSS -->
+    <link href="../vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- DataTables Responsive CSS -->
+    <link href="../vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+		
+		/* START CLASS GENERALE */
+		.bloc-no-margin {
+			margin: 0;
+		}
+		.bloc-no-padding {
+			padding: 0;
+		}
+		.bloc-no-border-radius {
+			border-radius: 0;
+		}
+		.bloc-no-border {
+			border: none;
+		}
+		.font-10 {
+			font-size: 10px;
+		}
+		.font-20 {
+			font-size: 20px;
+		}
+		.font-30 {
+			font-size: 30px;
+		}
+		.font-40 {
+			font-size: 40px;
+		}
+		.font-50 {
+			font-size: 50px;
+		}
+		.panel-footer {
+			background-color: #FFFFFF;
+		}
+		/* END CLASS GENERALE */
+
+		
+		.panel-green {
+    		border-color: #87E8C6;
+    	}
+    	.panel-heading-green {
+    		background-color: #87E8C6;
+    		border-color: #87E8C6;
+    		padding: 10px 15px;
+    		color: white;
+		}
+		.panel-green-a {
+		    color: #87E8C6;
+		}
+		.table-bordered-green {
+		    border: 1px solid #87E8C6;
+		}
+		.border-bottom-green {
+    		border-bottom: 2px solid #87E8C6 !important;
+    	}
+		/*---------------*/
+		.panel-fushia {
+    		border-color: #6F2480;
+    	}
+    	.panel-heading-fushia {
+    		background-color: #6F2480;
+    		border-color: #6F2480;
+    		padding: 10px 15px;
+    		color: white;
+		}
+		.panel-fushia-a {
+		    color: #6F2480;
+		}
+		.table-bordered-fushia {
+		    border: 1px solid #6F2480;
+		}
+		.border-bottom-fushia {
+    		border-bottom: 2px solid #6F2480 !important;
+    	}
+		/*----------------*/
+		.panel-alerte {
+    		border-color: #FEDB1D;
+    	}
+    	.panel-heading-alerte {
+    		background-color: #FEDB1D;
+    		border-color: #FEDB1D;
+    		padding: 10px 15px;
+    		color: white;
+		}
+		.panel-alerte-a {
+		    color: #FEDB1D;
+		}
+		.table-bordered-alerte {
+		    border: 1px solid #FEDB1D;
+		}
+		.border-bottom-alerte {
+    		border-bottom: 2px solid #FEDB1D !important;
+    	}
+		/*----------------*/
+		.panel-error {
+    		border-color: #B30802;
+    	}
+    	.panel-heading-error {
+    		background-color: #B30802;
+    		border-color: #B30802;
+    		padding: 10px 15px;
+    		color: white;
+		}
+		.panel-error-a {
+		    color: #B30802;
+		}
+		.table-bordered-error {
+		    border: 1px solid #B30802;
+		}
+		.border-bottom-error {
+    		border-bottom: 2px solid #B30802 !important;
+    	}
+		/*----------------*/
+		.table-bordered-primary {
+		    border: 1px solid #337ab7;
+		}
+		.border-bottom-primary {
+    		border-bottom: 2px solid #337ab7 !important;
+    	}
+	
+		
+
+    </style>
+</head>
+
+<body>
+    <div id="wrapper_global">
+
+    	<hr>
+
+        <div class="bloc-no-margin row">
+	        <div class="col-lg-3 col-md-6">
+	            <div class="bloc-no-margin bloc-no-border-radius panel panel-primary">
+	                <div class="bloc-no-border-radius panel-heading">
+	                    <div class="row">
+	                        <div class="col-xs-3">
+	                            <i class="fa fa-comments fa-4x"></i>
+	                        </div>
+	                        <div class="col-xs-9 text-right">
+	                            <div class="font-40"><em>27</em></div>
+	                            <div>Nouveau commentaire !</div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <a href="#">
+	                    <div class="panel-footer">
+	                        <span class="pull-left">Voir le detail</span>
+	                        <span class="pull-right"><i class="fa fa-arrow-circle-right fa-2x"></i></span>
+	                        <div class="clearfix"></div>
+	                    </div>
+	                </a>
+	            </div>
+	        </div>
+		</div>
+
+		<hr>
+
+		<div class="bloc-no-margin row">
+	        <div class="col-lg-3 col-md-6">
+	            <div class="bloc-no-margin bloc-no-border-radius panel panel-green">
+	                <div class="bloc-no-border-radius panel-heading-green">
+	                    <div class="row">
+	                        <div class="col-xs-3">
+	                            <i class="fa fa-comments fa-4x"></i>
+	                        </div>
+	                        <div class="col-xs-9 text-right">
+	                            <div class="font-40"><em>27</em></div>
+	                            <div>Nouveau commentaire !</div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <a class="panel-green-a" href="#">
+	                    <div class="panel-footer">
+	                        <span class="pull-left">Voir le detail</span>
+	                        <span class="pull-right"><i class="fa fa-arrow-circle-right fa-2x"></i></span>
+	                        <div class="clearfix"></div>
+	                    </div>
+	                </a>
+	            </div>
+	        </div>
+		</div>
+
+		<hr>
+
+		<div class="bloc-no-margin row">
+	        <div class="col-lg-3 col-md-6">
+	            <div class="bloc-no-margin bloc-no-border-radius panel panel-fushia">
+	                <div class="bloc-no-border-radius panel-heading-fushia">
+	                    <div class="row">
+	                        <div class="col-xs-3">
+	                            <i class="fa fa-tasks fa-4x"></i>
+	                        </div>
+	                        <div class="col-xs-9 text-right">
+	                            <div class="font-40"><em>23</em></div>
+	                            <div>Nouvelle tâche !</div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <a class="panel-fushia-a" href="#">
+	                    <div class="panel-footer">
+	                        <span class="pull-left">Voir le detail</span>
+	                        <span class="pull-right"><i class="fa fa-arrow-circle-right fa-2x"></i></span>
+	                        <div class="clearfix"></div>
+	                    </div>
+	                </a>
+	            </div>
+	        </div>
+		</div>
+
+		<hr>
+
+		<div class="bloc-no-margin row">
+	        <div class="col-lg-3 col-md-6">
+	            <div class="bloc-no-margin bloc-no-border-radius panel panel-alerte">
+	                <div class="bloc_no_radius panel-heading-alerte">
+	                    <div class="row">
+	                        <div class="col-xs-3">
+	                            <i class="fa fa-envelope-o fa-4x"></i>
+	                        </div>
+	                        <div class="col-xs-9 text-right">
+	                            <div class="font-40"><em>11</em></div>
+	                            <div>Nouveau message !</div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <a class="panel-alerte-a" href="#">
+	                    <div class="panel-footer">
+	                        <span class="pull-left">Voir le detail</span>
+	                        <span class="pull-right"><i class="fa fa-arrow-circle-right fa-2x"></i></span>
+	                        <div class="clearfix"></div>
+	                    </div>
+	                </a>
+	            </div>
+	        </div>
+		</div>
+
+		<hr>
+
+		<div class="bloc-no-margin row">
+	        <div class="col-lg-3 col-md-6">
+	            <div class="bloc-no-margin bloc-no-border-radius panel panel-error">
+	                <div class="bloc_no_radius panel-heading-error">
+	                    <div class="row">
+	                        <div class="col-xs-3">
+	                            <i class="fa fa-envelope-o fa-4x"></i>
+	                        </div>
+	                        <div class="col-xs-9 text-right">
+	                            <div class="font-40"><em>11</em></div>
+	                            <div>Nouveau message !</div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <a class="panel-error-a" href="#">
+	                    <div class="panel-footer">
+	                        <span class="pull-left">Voir le detail</span>
+	                        <span class="pull-right"><i class="fa fa-arrow-circle-right fa-2x"></i></span>
+	                        <div class="clearfix"></div>
+	                    </div>
+	                </a>
+	            </div>
+	        </div>
+		</div>
+
+		<hr>
+		
+		<div class="bloc-no-margin row">
+	        <div class="col-lg-3 col-md-6">
+				<div class="bloc-no-border-radius progress progress-striped active">
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                        <span class="sr-only">20% Complete (success)</span>
+                    </div>
+                </div>
+			</div>
+		</div>
+
+		<hr>
+		
+		<div class="bloc-no-margin row">
+	        <div class="col-lg-3 col-md-6">
+				<div class="bloc-no-border-radius progress progress-striped active">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                        <span class="sr-only">40% Complete (success)</span>
+                    </div>
+                </div>
+			</div>
+		</div>
+
+		<hr>
+		
+		<div class="bloc-no-margin row">
+	        <div class="col-lg-3 col-md-6">
+				<div class="bloc-no-border-radius progress progress-striped active">
+                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                        <span class="sr-only">60% Complete (success)</span>
+                    </div>
+                </div>
+			</div>
+		</div>
+
+		<hr>
+		
+		<div class="bloc-no-margin row">
+	        <div class="col-lg-3 col-md-6">
+				<div class="bloc-no-border-radius progress progress-striped active">
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                        <span class="sr-only">80% Complete (success)</span>
+                    </div>
+                </div>
+			</div>
+		</div>
+
+		<hr>
+		
+		<div class="bloc-no-margin row">
+	        <div class="col-lg-3 col-md-6">
+				<div class="bloc-no-border-radius progress progress-striped active">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                        <span class="sr-only">100% Complete (success)</span>
+                    </div>
+                </div>
+			</div>
+		</div>
+
+		<hr>
+
+	    <div class="bloc-no-margin row">
+	        <div class="col-lg-8">
+	            <div class="bloc-no-border-radius panel panel-primary">
+	            	<div class="bloc-no-border-radius panel-heading">
+	                    <div class="row">
+	                        <div class="col-xs-3">
+	                            <i class="fa fa-user fa-2x"></i>
+	                            <span class="font-20">Listes des tiers</span>
+	                        </div>
+	                        <div class="col-xs-9 text-right">
+	                            <div class="font-20">
+	                            	<span>Nombre de tiers</span>
+	                            	<em>15</em>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="panel-body">
+	                    <table width="100%" class="table table-bordered-primary table-hover">
+	                        <thead>
+	                            <tr>
+	                                <th class="table-bordered-primary border-bottom-primary text-center">Rendering engine</th>
+	                                <th class="table-bordered-primary border-bottom-primary text-center">Browser</th>
+	                                <th class="table-bordered-primary border-bottom-primary text-center">Platform(s)</th>
+	                                <th class="table-bordered-primary border-bottom-primary text-center">Engine version</th>
+	                                <th class="table-bordered-primary border-bottom-primary text-center">CSS grade</th>
+	                            </tr>
+	                        </thead>
+	                        <tbody>
+	                            <tr>
+	                                <td class="table-bordered-primary text-center">Trident</td>
+	                                <td class="table-bordered-primary text-center">Internet Explorer 4.0</td>
+	                                <td class="table-bordered-primary text-center">Win 95+</td>
+	                                <td class="table-bordered-primary text-center">4</td>
+	                                <td class="table-bordered-primary text-center">X</td>
+	                            </tr>
+	                            <tr>
+	                                <td class="table-bordered-primary text-center">Trident</td>
+	                                <td class="table-bordered-primary text-center">Internet Explorer 4.0</td>
+	                                <td class="table-bordered-primary text-center">Win 95+</td>
+	                                <td class="table-bordered-primary text-center">4</td>
+	                                <td class="table-bordered-primary text-center">X</td>
+	                            </tr>
+	                            <tr>
+	                                <td class="table-bordered-primary text-center">Trident</td>
+	                                <td class="table-bordered-primary text-center">Internet Explorer 4.0</td>
+	                                <td class="table-bordered-primary text-center">Win 95+</td>
+	                                <td class="table-bordered-primary text-center">4</td>
+	                                <td class="table-bordered-primary text-center">X</td>
+	                            </tr>
+	                            <tr>
+	                                <td class="table-bordered-primary text-center">Trident</td>
+	                                <td class="table-bordered-primary text-center">Internet Explorer 4.0</td>
+	                                <td class="table-bordered-primary text-center">Win 95+</td>
+	                                <td class="table-bordered-primary text-center">4</td>
+	                                <td class="table-bordered-primary text-center">X</td>
+	                            </tr>
+	                            <tr>
+	                                <td class="table-bordered-primary text-center">Trident</td>
+	                                <td class="table-bordered-primary text-center">Internet Explorer 4.0</td>
+	                                <td class="table-bordered-primary text-center">Win 95+</td>
+	                                <td class="table-bordered-primary text-center">4</td>
+	                                <td class="table-bordered-primary text-center">X</td>
+	                            </tr>
+	                        </tbody>
+	                    </table>
+	                </div>
+	            </div>
+	        </div>
+    	</div>
+
+    	<hr>
+
+	    <div class="bloc-no-margin row">
+	        <div class="col-lg-8">
+	            <div class="bloc-no-border-radius panel panel-green">
+	            	<div class="bloc-no-border-radius panel-heading-green">
+	                    <div class="row">
+	                        <div class="col-xs-3">
+	                            <i class="fa fa-user fa-2x"></i>
+	                            <span class="font-20">Listes des tiers</span>
+	                        </div>
+	                        <div class="col-xs-9 text-right">
+	                            <div class="font-20">
+	                            	<span>Nombre de tiers</span>
+	                            	<em>15</em>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="panel-body">
+	                    <table width="100%" class="table table-bordered-green table-hover">
+	                        <thead>
+	                            <tr>
+	                                <th class="table-bordered-green border-bottom-green text-center">Rendering engine</th>
+	                                <th class="table-bordered-green border-bottom-green text-center">Browser</th>
+	                                <th class="table-bordered-green border-bottom-green text-center">Platform(s)</th>
+	                                <th class="table-bordered-green border-bottom-green text-center">Engine version</th>
+	                                <th class="table-bordered-green border-bottom-green text-center">CSS grade</th>
+	                            </tr>
+	                        </thead>
+	                        <tbody>
+	                            <tr>
+	                                <td class="table-bordered-green text-center">Trident</td>
+	                                <td class="table-bordered-green text-center">Internet Explorer 4.0</td>
+	                                <td class="table-bordered-green text-center">Win 95+</td>
+	                                <td class="table-bordered-green text-center">4</td>
+	                                <td class="table-bordered-green text-center">X</td>
+	                            </tr>
+	                        </tbody>
+	                    </table>
+	                </div>
+	            </div>
+	        </div>
+    	</div>
+
+    	<hr>
+
+	    <div class="bloc-no-margin row">
+	        <div class="col-lg-8">
+	            <div class="bloc-no-border-radius panel panel-fushia">
+	            	<div class="bloc_no_radius panel-heading-fushia">
+	                    <div class="row">
+	                        <div class="col-xs-3">
+	                            <i class="fa fa-user fa-2x"></i>
+	                            <span class="font-20">Listes des tiers</span>
+	                        </div>
+	                        <div class="col-xs-9 text-right">
+	                            <div class="font-20">
+	                            	<span>Nombre de tiers</span>
+	                            	<em>15</em>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="panel-body">
+	                    <table width="100%" class="table table-bordered-fushia table-hover">
+	                        <thead>
+	                            <tr>
+	                                <th class="table-bordered-fushia border-bottom-fushia text-center">Rendering engine</th>
+	                                <th class="table-bordered-fushia border-bottom-fushia text-center">Browser</th>
+	                                <th class="table-bordered-fushia border-bottom-fushia text-center">Platform(s)</th>
+	                                <th class="table-bordered-fushia border-bottom-fushia text-center">Engine version</th>
+	                                <th class="table-bordered-fushia border-bottom-fushia text-center">CSS grade</th>
+	                            </tr>
+	                        </thead>
+	                        <tbody>
+	                            <tr>
+	                                <td class="table-bordered-fushia text-center">Trident</td>
+	                                <td class="table-bordered-fushia text-center">Internet Explorer 4.0</td>
+	                                <td class="table-bordered-fushia text-center">Win 95+</td>
+	                                <td class="table-bordered-fushia text-center">4</td>
+	                                <td class="table-bordered-fushia text-center">X</td>
+	                            </tr>
+	                        </tbody>
+	                    </table>
+	                </div>
+	            </div>
+	        </div>
+    	</div>
+
+    	<hr>
+
+	    <div class="bloc-no-margin row">
+	        <div class="col-lg-8">
+	            <div class="bloc-no-border-radius panel panel-alerte">
+	            	<div class="bloc-no-radius panel-heading-alerte">
+	                    <div class="row">
+	                        <div class="col-xs-3">
+	                            <i class="fa fa-user fa-2x"></i>
+	                            <span class="font-20">Listes des tiers</span>
+	                        </div>
+	                        <div class="col-xs-9 text-right">
+	                            <div class="font-20">
+	                            	<span>Nombre de tiers</span>
+	                            	<em>15</em>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="panel-body">
+	                    <table width="100%" class="table table-bordered-alerte table-hover">
+	                        <thead>
+	                            <tr>
+	                                <th class="table-bordered-alerte border-bottom-alerte text-center">Rendering engine</th>
+	                                <th class="table-bordered-alerte border-bottom-alerte text-center">Browser</th>
+	                                <th class="table-bordered-alerte border-bottom-alerte text-center">Platform(s)</th>
+	                                <th class="table-bordered-alerte border-bottom-alerte text-center">Engine version</th>
+	                                <th class="table-bordered-alerte border-bottom-alerte text-center">CSS grade</th>
+	                            </tr>
+	                        </thead>
+	                        <tbody>
+	                            <tr>
+	                                <td class="table-bordered-alerte text-center">Trident</td>
+	                                <td class="table-bordered-alerte text-center">Internet Explorer 4.0</td>
+	                                <td class="table-bordered-alerte text-center">Win 95+</td>
+	                                <td class="table-bordered-alerte text-center">4</td>
+	                                <td class="table-bordered-alerte text-center">X</td>
+	                            </tr>
+	                        </tbody>
+	                    </table>
+	                </div>
+	            </div>
+	        </div>
+    	</div>
+
+    	<hr>
+
+	    <div class="bloc-no-margin row">
+	        <div class="col-lg-8">
+	            <div class="bloc-no-border-radius panel panel-error">
+	            	<div class="bloc-no-radius panel-heading-error">
+	                    <div class="row">
+	                        <div class="col-xs-3">
+	                            <i class="fa fa-user fa-2x"></i>
+	                            <span class="font-20">Listes des tiers</span>
+	                        </div>
+	                        <div class="col-xs-9 text-right">
+	                            <div class="font-20">
+	                            	<span>Nombre de tiers</span>
+	                            	<em>15</em>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="panel-body">
+	                    <table width="100%" id="liste_des_tiers" class="table table-bordered-error table-hover">
+	                        <thead>
+	                            <tr>
+	                                <th class="table-bordered-error border-bottom-error text-center">Rendering engine</th>
+	                                <th class="table-bordered-error border-bottom-error text-center">Browser</th>
+	                                <th class="table-bordered-error border-bottom-error text-center">Platform(s)</th>
+	                                <th class="table-bordered-error border-bottom-error text-center">Engine version</th>
+	                                <th class="table-bordered-error border-bottom-error text-center">CSS grade</th>
+	                            </tr>
+	                        </thead>
+	                        <tbody>
+	                            <tr>
+	                                <td class="table-bordered-error text-center">Trident</td>
+	                                <td class="table-bordered-error text-center">Internet Explorer 4.0</td>
+	                                <td class="table-bordered-error text-center">Win 95+</td>
+	                                <td class="table-bordered-error text-center">4</td>
+	                                <td class="table-bordered-error text-center">X</td>
+	                            </tr>
+	                        </tbody>
+	                    </table>
+	                </div>
+	            </div>
+	        </div>
+    	</div>
+
+    </div>
+    <!-- /#wrapper -->
+			
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- DataTables JavaScript -->
+    <script src="../vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+    <script src="../vendor/datatables-responsive/dataTables.responsive.js"></script>
+    <script>
+		$(document).ready(function() {
+		    $('#liste_des_tiers').DataTable({
+		        responsive: true
+		    });
+		});
+	</script>
+</body>
+
+</html>
